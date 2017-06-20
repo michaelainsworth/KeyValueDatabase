@@ -1,0 +1,8 @@
+
+let &path  =       $PWD . '/library**'
+let &path .= ',' . $PWD . '/script**'
+let &path .= ',' . $PWD . '/test**'
+
+let &makeprg = 'script/make.sh'
+
+nnoremap <leader>b :make<cr>
